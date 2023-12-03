@@ -94,6 +94,52 @@ export const wallets: Record<string, Features & Info> = {
       availableTestnets: true,
     },
   },
+  'Dawn Wallet': {
+    url: 'https://www.dawnwallet.xyz/',
+    deviceCompatibility: {
+      mobile: true,
+      desktop: false,
+      browser: true,
+    },
+    accountType: {
+      eoa: false,
+      erc4337: false,
+      safe: true,
+    },
+    chainCompatibility: {
+      ethereum: true,
+      optimism: true,
+      arbitrum: true,
+      base: true,
+      polygon: true,
+      gnosis: false,
+      bnbSmartChain: false,
+    },
+    ensCompatibility: {
+      mainnet: true,
+      subDomains: true,
+      offchain: false,
+      L2s: true,
+      customDomains: false,
+      freeUsernames: false,
+    },
+    backupOptions: {
+      cloud: false,
+      local: true,
+      socialRecovery: true,
+    },
+    securityFeatures: {
+      multisig: true,
+      MPC: false,
+      keyRotation: true,
+      transactionScanning: true,
+      limitsAndTimelocks: true,
+      hardwareWalletSupport: true,
+    },
+    availableTestnets: {
+      availableTestnets: true,
+    },
+  },
   Rainbow: {
     url: 'https://rainbow.me/',
     deviceCompatibility: {
